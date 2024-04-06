@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Cyrodiil";
+  src: url("./fonts/Cyrodiil.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CyrodiilBold";
+  src: url("./fonts/Cyrodiil\ Bold.otf");
+  font-style: normal;
+}
+
+:root {
+  font-family: "Cyrodiil";
+  --primary: #030303;
+  --text: #bebcbb;
+  --secondary: #898a87;
+  --accent: #fefdff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  background-color: var(--primary);
+  color: var(--text);
+  background-image: url("./images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 90vh;
+  background-size: cover;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  box-shadow: none;
+  padding: 8px 16px;
+  font-family: "CyrodiilBold";
+  font-size: 24px;
+  background-color: inherit;
+  color: inherit;
+  border: 2px solid var(--secondary);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--accent);
+  color: var(--primary);
+  border: 2px solid var(--secondary);
+}
+
+p {
+  font-size: 24px;
+}
+
+#content {
+  width: 100%;
+}
+
+.home-container,
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+  padding: 32px 64px;
+}
+
+.image-border {
+  border: 2px solid var(--secondary);
+}
+
+.about-image {
+  max-width: min(90%, 500px);
+  height: auto;
+}
+
+.about-div {
+  width: min(100%, 700px);
+}
+
+.active {
+  background-color: var(--accent);
+  color: var(--primary);
+  border: 2px solid var(--secondary);
+}
