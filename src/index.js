@@ -1,5 +1,6 @@
 import "./style.css";
 import home from "./pages/home.js";
+import menu from "./pages/menu.js";
 import about from "./pages/about.js";
 
 if (process.env.NODE_ENV !== "production") {
@@ -8,6 +9,7 @@ if (process.env.NODE_ENV !== "production") {
 const content = document.querySelector("#content");
 
 const homeButton = document.querySelector("#home");
+const menuButton = document.querySelector("#menu");
 const aboutButton = document.querySelector("#about");
 
 initialRender();
@@ -16,6 +18,12 @@ homeButton.addEventListener("click", function () {
   clearContent();
   home();
   setActiveButton(homeButton);
+});
+
+menuButton.addEventListener("click", function () {
+  clearContent();
+  menu();
+  setActiveButton(menuButton);
 });
 
 aboutButton.addEventListener("click", function () {

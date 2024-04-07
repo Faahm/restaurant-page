@@ -14,8 +14,12 @@ const home = function () {
   theBanneredMare.src = TheBanneredMare;
   theBanneredMare.classList.add("image-border");
 
+  const body = document.createElement("h2");
+  body.textContent = "Now serving more than Skyrim food and drinks.";
+
   container.appendChild(title);
   container.appendChild(theBanneredMare);
+  container.appendChild(body);
   content.appendChild(container);
 };
 
