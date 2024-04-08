@@ -300,7 +300,7 @@ const menu = function () {
   waterOfLifeTitle.textContent = "Water of Life";
 
   const waterOfLifeImage = new Image();
-  waterOfLifeImage.src = LongTaffyTreat;
+  waterOfLifeImage.src = WaterOfLife;
   waterOfLifeImage.classList.add("image-border");
   waterOfLifeImage.classList.add("menu-item-image");
 
