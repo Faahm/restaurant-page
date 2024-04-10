@@ -1,4 +1,4 @@
-![image](https://github.com/Faahm/restaurant-page/assets/62914861/2f079df5-e69b-4881-8a27-64f2540daa9c)# reastaurant-page
+# reastaurant-page
 
 AKA The Bannered Mare, features an a tabbed view for the homepage, menu, and about
 
